@@ -8,6 +8,7 @@ export interface MenuItem {
   tags: string[]
   isVegetarian?: boolean
   isSpicy?: boolean
+  isAlcoholic?: boolean
 }
 
 export interface MenuCategory {
@@ -23,4 +24,5 @@ export interface MenuData {
   postres: MenuItem[]
   bebidas: MenuItem[]
   panaderia: MenuItem[]
+  PROMOS: MenuItem[]
 }

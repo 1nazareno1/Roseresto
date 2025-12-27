@@ -1,4 +1,4 @@
-"use client"
+//Parte baja de todo el proyecto, con informacion de contacto, redes sociales y horarios de atencion
 
 import { Box, Container, Typography, Grid, IconButton } from "@mui/material"
 import { Instagram, Facebook, Twitter, Phone, Mail, MapPin } from "lucide-react"
@@ -58,7 +58,7 @@ export default function MenuFooter() {
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, gap: 1 }}>
               <MapPin size={20} />
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                Av. Libertador 1234, Buenos Aires
+                Av. San Martín 1257, 9 de Julio (6.500)
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, gap: 1 }}>

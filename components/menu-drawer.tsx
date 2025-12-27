@@ -2,6 +2,7 @@
 
 import { Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Box, Typography } from "@mui/material"
 import { Pizza, UtensilsCrossed, Sandwich, Cake, Wine, Cookie } from "lucide-react"
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 const categories = [
   { id: "entradas", label: "Entradas", icon: <Sandwich size={24} /> },
@@ -10,6 +11,7 @@ const categories = [
   { id: "postres", label: "Postres", icon: <Cake size={24} /> },
   { id: "bebidas", label: "Bebidas", icon: <Wine size={24} /> },
   { id: "panaderia", label: "Panadería", icon: <Cookie size={24} /> },
+  { id: "PROMOS", label: "PROMOS", icon: <AttachMoneyIcon /> },
 ]
 
 interface MenuDrawerProps {

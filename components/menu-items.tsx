@@ -1,7 +1,7 @@
 "use client"
 
 import { Grid, Card, CardMedia, CardContent, Typography, Box, Chip } from "@mui/material"
-import { Flame, Leaf } from "lucide-react"
+import { Flame, Leaf,  Wine } from "lucide-react"
 import type { MenuItem } from "@/types/menu"
 
 interface MenuItemsProps {
@@ -101,6 +101,19 @@ export default function MenuItems({ items, categoryLabel }: MenuItemsProps) {
                         bgcolor: "rgba(255, 87, 34, 0.1)",
                         color: "#FF5722",
                         fontWeight: 500,
+                      }}
+                    />
+                  )}
+                  {item.isAlcoholic && (
+                    <Chip
+                      icon={<Wine size={16} />}
+                      label="Contiene alcohol"
+                      size="small"
+                      sx={{
+                        bgcolor: "rgba(128, 0, 128, 0.1)",
+                        color: "#800080",
+                        fontWeight: 500,
+                        
                       }}
                     />
                   )}

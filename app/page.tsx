@@ -9,6 +9,7 @@ import MenuItems from "@/components/menu-items"
 import MenuFooter from "@/components/menu-footer"
 import { menuData } from "@/data/menu-data"
 import type { MenuCategory } from "@/types/menu"
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 const categories: MenuCategory[] = [
   { id: "entradas", label: "Entradas", icon: <Sandwich size={24} color="#8B6F47" /> },
@@ -17,6 +18,7 @@ const categories: MenuCategory[] = [
   { id: "postres", label: "Postres", icon: <Cake size={24} color="#8B6F47" /> },
   { id: "bebidas", label: "Bebidas", icon: <Wine size={24} color="#8B6F47" /> },
   { id: "panaderia", label: "Panadería", icon: <Cookie size={24} color="#8B6F47" /> },
+  { id: "PROMOS", label: "PROMOS", icon: <AttachMoneyIcon style={{ fontSize: 24, color: "#8B6F47" }} /> },
 ]
 
 export default function HomePage() {

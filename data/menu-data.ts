@@ -112,7 +112,8 @@ export const menuData: MenuData = {
       description: "Copa de vino Malbec argentino de bodega seleccionada",
       price: "$800",
       image: "/red-wine-malbec-glass.jpg",
-      tags: [],
+      tags: ["Contiene Alcohol"],
+      isAlcoholic: true,
     },
     {
       id: 17,
@@ -152,4 +153,15 @@ export const menuData: MenuData = {
       isVegetarian: true,
     },
   ],
+  PROMOS: [
+    {
+      id: 21,
+      name: "Combo Pizza + Bebida",
+      description: "Pizza Margherita + Limonada Natural a un precio especial",
+      price: "$1900",
+      image: "/pizza-drink-combo.jpg",
+      tags: ["Vegetariano"],
+      isVegetarian: true,
+    }
+  ]
 }
