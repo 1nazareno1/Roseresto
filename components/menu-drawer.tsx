@@ -1,27 +1,35 @@
 "use client"
 
 import { Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Box, Typography } from "@mui/material"
-import { Pizza, UtensilsCrossed, Sandwich, Cake, Wine, Cookie } from "lucide-react"
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-
-const categories = [
-  { id: "entradas", label: "Entradas", icon: <Sandwich size={24} /> },
-  { id: "principales", label: "Principales", icon: <UtensilsCrossed size={24} /> },
-  { id: "pizzas", label: "Pizzas", icon: <Pizza size={24} /> },
-  { id: "postres", label: "Postres", icon: <Cake size={24} /> },
-  { id: "bebidas", label: "Bebidas", icon: <Wine size={24} /> },
-  { id: "panaderia", label: "Panadería", icon: <Cookie size={24} /> },
-  { id: "PROMOS", label: "PROMOS", icon: <AttachMoneyIcon /> },
-]
+import type { MenuCategory } from "@/types/menu"
+import { getIcon } from "@/lib/icon-map"
 
 interface MenuDrawerProps {
   open: boolean
   onClose: () => void
-  selectedCategory: string
+  categories: MenuCategory[]
+  selectedCategoryId: string
   onCategorySelect: (categoryId: string) => void
 }
 
-export default function MenuDrawer({ open, onClose, selectedCategory, onCategorySelect }: MenuDrawerProps) {
+/**
+ * COMPONENTE MenuDrawer
+ *
+ * Responsabilidad: Mostrar la navegación de categorías principales en un drawer lateral
+ *
+ * Comportamiento:
+ * - Solo muestra las categorías principales (nivel de navegación)
+ * - NO muestra subgrupos internos (estos se descubren mediante scroll en el contenido)
+ * - La categoría seleccionada se destaca visualmente
+ * - Al seleccionar una categoría, cierra el drawer y actualiza el contenido
+ */
+export default function MenuDrawer({
+  open,
+  onClose,
+  categories,
+  selectedCategoryId,
+  onCategorySelect,
+}: MenuDrawerProps) {
   const handleCategoryClick = (categoryId: string) => {
     onCategorySelect(categoryId)
     onClose()
@@ -32,14 +40,14 @@ export default function MenuDrawer({ open, onClose, selectedCategory, onCategory
       <Box sx={{ width: 280, pt: 2 }}>
         <Box sx={{ px: 3, pb: 2, borderBottom: "1px solid", borderColor: "divider" }}>
           <Typography variant="h6" sx={{ fontWeight: 700, color: "primary.main" }}>
-            Categorías
+            Menú
           </Typography>
         </Box>
         <List>
           {categories.map((category) => (
             <ListItem key={category.id} disablePadding>
               <ListItemButton
-                selected={selectedCategory === category.id}
+                selected={selectedCategoryId === category.id}
                 onClick={() => handleCategoryClick(category.id)}
                 sx={{
                   py: 2,
@@ -53,13 +61,13 @@ export default function MenuDrawer({ open, onClose, selectedCategory, onCategory
                   },
                 }}
               >
-                <ListItemIcon sx={{ color: selectedCategory === category.id ? "primary.main" : "text.secondary" }}>
-                  {category.icon}
+                <ListItemIcon sx={{ color: selectedCategoryId === category.id ? "primary.main" : "text.secondary" }}>
+                  {getIcon(category.iconName, { size: 24 })}
                 </ListItemIcon>
                 <ListItemText
                   primary={category.label}
                   primaryTypographyProps={{
-                    fontWeight: selectedCategory === category.id ? 600 : 400,
+                    fontWeight: selectedCategoryId === category.id ? 600 : 400,
                   }}
                 />
               </ListItemButton>

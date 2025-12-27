@@ -2,28 +2,15 @@
 
 import { useState } from "react"
 import { Container } from "@mui/material"
-import { Pizza, UtensilsCrossed, Sandwich, Cake, Wine, Cookie } from "lucide-react"
 import MenuHeader from "@/components/menu-header"
 import MenuDrawer from "@/components/menu-drawer"
 import MenuItems from "@/components/menu-items"
 import MenuFooter from "@/components/menu-footer"
 import { menuData } from "@/data/menu-data"
-import type { MenuCategory } from "@/types/menu"
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-
-const categories: MenuCategory[] = [
-  { id: "entradas", label: "Entradas", icon: <Sandwich size={24} color="#8B6F47" /> },
-  { id: "principales", label: "Principales", icon: <UtensilsCrossed size={24} color="#8B6F47" /> },
-  { id: "pizzas", label: "Pizzas", icon: <Pizza size={24} color="#8B6F47" /> },
-  { id: "postres", label: "Postres", icon: <Cake size={24} color="#8B6F47" /> },
-  { id: "bebidas", label: "Bebidas", icon: <Wine size={24} color="#8B6F47" /> },
-  { id: "panaderia", label: "Panadería", icon: <Cookie size={24} color="#8B6F47" /> },
-  { id: "PROMOS", label: "PROMOS", icon: <AttachMoneyIcon style={{ fontSize: 24, color: "#8B6F47" }} /> },
-]
 
 export default function HomePage() {
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const [selectedCategory, setSelectedCategory] = useState("entradas")
+  const [selectedCategoryId, setSelectedCategoryId] = useState("entradas")
 
   const handleDrawerOpen = () => {
     setDrawerOpen(true)
@@ -34,29 +21,34 @@ export default function HomePage() {
   }
 
   const handleCategorySelect = (categoryId: string) => {
-    setSelectedCategory(categoryId)
+    setSelectedCategoryId(categoryId)
   }
 
-  const currentCategory = categories.find((cat) => cat.id === selectedCategory)
-  const currentItems = menuData[selectedCategory as keyof typeof menuData] || []
+  // Obtener la categoría actual de los datos
+  const currentCategory = menuData.categories.find((cat) => cat.id === selectedCategoryId)
+
+  if (!currentCategory) {
+    return null
+  }
 
   return (
     <main className="min-h-screen">
       <MenuHeader
         onMenuClick={handleDrawerOpen}
-        currentCategory={currentCategory?.label || ""}
-        currentIcon={currentCategory?.icon}
+        currentCategory={currentCategory.label}
+        currentIconName={currentCategory.iconName}
       />
 
       <MenuDrawer
         open={drawerOpen}
         onClose={handleDrawerClose}
-        selectedCategory={selectedCategory}
+        categories={menuData.categories}
+        selectedCategoryId={selectedCategoryId}
         onCategorySelect={handleCategorySelect}
       />
 
       <Container maxWidth="lg" sx={{ py: 4 }}>
-        <MenuItems items={currentItems} categoryLabel={currentCategory?.label || ""} />
+        <MenuItems category={currentCategory} />
       </Container>
 
       <MenuFooter />

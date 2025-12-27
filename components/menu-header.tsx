@@ -2,15 +2,15 @@
 
 import { AppBar, Toolbar, Typography, IconButton, Box, Container } from "@mui/material"
 import { Menu } from "lucide-react"
-import type React from "react"
+import { getIcon } from "@/lib/icon-map"
 
 interface MenuHeaderProps {
   onMenuClick: () => void
   currentCategory: string
-  currentIcon?: React.ReactNode
+  currentIconName?: string
 }
 
-export default function MenuHeader({ onMenuClick, currentCategory, currentIcon }: MenuHeaderProps) {
+export default function MenuHeader({ onMenuClick, currentCategory, currentIconName }: MenuHeaderProps) {
   return (
     <AppBar
       position="sticky"
@@ -26,7 +26,7 @@ export default function MenuHeader({ onMenuClick, currentCategory, currentIcon }
           <Box sx={{ width: 40 }} />
 
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            {currentIcon}
+            {currentIconName && getIcon(currentIconName, { size: 24, color: "#8B6F47" })}
             <Typography
               variant="h5"
               component="h1"
