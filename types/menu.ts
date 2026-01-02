@@ -1,4 +1,8 @@
-import type React from "react"
+
+
+export type IconKey = "entradas" | "principales" | "pizzas" | "postres" | "bebidas" | "panaderia" | "promos"
+
+
 export interface MenuItem {
   id: number
   name: string
@@ -11,18 +15,21 @@ export interface MenuItem {
   isAlcoholic?: boolean
 }
 
+export interface MenuGroup {
+  id: string
+  label: string
+  items: MenuItem[]
+}
+
 export interface MenuCategory {
   id: string
   label: string
-  icon: React.ReactNode
+  icon: IconKey
+  groups: MenuGroup[]
 }
 
-export interface MenuData {
-  entradas: MenuItem[]
-  principales: MenuItem[]
-  pizzas: MenuItem[]
-  postres: MenuItem[]
-  bebidas: MenuItem[]
-  panaderia: MenuItem[]
-  PROMOS: MenuItem[]
-}
+/**
+ * Todas las categorías del menú
+ * indexadas por id (entradas, bebidas, etc)
+ */
+export type MenuData = Record<string, MenuCategory>

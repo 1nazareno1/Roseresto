@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@hookform/resolvers": "^3.10.0",
