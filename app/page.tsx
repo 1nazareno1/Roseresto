@@ -7,6 +7,7 @@ import MenuHeader from "@/components/menu-header"
 import MenuDrawer from "@/components/menu-drawer"
 import MenuItems from "@/components/menu-items"
 import MenuFooter from "@/components/menu-footer"
+import ScrollableTabs from "@/components/scrollable-tabs"
 
 import { menuData } from "@/data/menu-data"
 import { iconMap } from "@/components/Menu/icon-map"
@@ -25,16 +26,16 @@ export default function HomePage() {
     setDrawerOpen(false)
   }
 
-  // 👉 Categoría actual desde menuData
+  //  Categoría actual desde menuData
   const currentCategory: MenuCategory | undefined =
     menuData[selectedCategory as keyof typeof menuData]
 
-  // 👉 Icono dinámico (opción B)
+  //  Icono dinámico (opción B)
   const Icon = currentCategory
     ? iconMap[currentCategory.icon]
     : null
 
-  // 👉 Categorías para el drawer
+  // Categorías para el drawer
   const categories = Object.values(menuData)
 
   return (
@@ -43,6 +44,12 @@ export default function HomePage() {
         onMenuClick={handleDrawerOpen}
         currentCategory={currentCategory?.label || ""}
         currentIcon={Icon ? <Icon size={24} color="#8B6F47" /> : null}
+      />
+
+      <ScrollableTabs
+        categories={categories}
+        selectedCategory={selectedCategory}
+        onCategorySelect={handleCategorySelect}
       />
 
       <MenuDrawer
@@ -58,7 +65,7 @@ export default function HomePage() {
           <section key={group.id}>
             <h3
               style={{
-                margin: "40px 0 16px",
+                margin: "60px 0 16px",
                 fontSize: "1.4rem",
                 fontWeight: 600,
                 color: "#4a4a4a",
