@@ -1,7 +1,7 @@
 //Parte baja de todo el proyecto, con informacion de contacto, redes sociales y horarios de atencion
 
 import { Box, Container, Typography, Grid, IconButton } from "@mui/material"
-import { Instagram, Facebook, Twitter, Phone, Mail, MapPin } from "lucide-react"
+import { Instagram, Facebook, Twitter, Phone, Mail, MapPin,  } from "lucide-react"
 
 export default function MenuFooter() {
   return (
@@ -25,13 +25,10 @@ export default function MenuFooter() {
             </Typography>
             <Box sx={{ display: "flex", gap: 1 }}>
               <IconButton size="small" sx={{ color: "white" }}>
-                <Instagram size={20} />
+                <Instagram size={20} onClick={() => window.open("https://www.instagram.com/espacio.sanmarcos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank")} />
               </IconButton>
               <IconButton size="small" sx={{ color: "white" }}>
-                <Facebook size={20} />
-              </IconButton>
-              <IconButton size="small" sx={{ color: "white" }}>
-                <Twitter size={20} />
+                <Phone size={20} onClick={() => window.open("https://wa.me/5492317572421", "_blank")} />
               </IconButton>
             </Box>
           </Grid>

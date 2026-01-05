@@ -58,7 +58,7 @@ export default function MenuItems({ items, categoryLabel }: MenuItemsProps) {
             >
               <CardMedia
                 component="img"
-                height="140"
+                height="160"
                 image={item.image}
                 alt={item.name}
                 sx={{
