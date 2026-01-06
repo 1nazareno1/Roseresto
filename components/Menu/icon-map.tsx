@@ -1,6 +1,7 @@
-import { UtensilsCrossed, Pizza, Cake, Wine, Croissant, DollarSign, Sandwich } from "lucide-react"
+import { UtensilsCrossed, Pizza, Cake, Wine, Croissant, DollarSign, Sandwich, Coffee } from "lucide-react"
 import type { IconKey } from "@/types/menu"
 import type { LucideIcon } from "lucide-react"
+
 
 export const iconMap: Record<IconKey, LucideIcon> = {
   entradas: Sandwich,
@@ -10,6 +11,7 @@ export const iconMap: Record<IconKey, LucideIcon> = {
   bebidas: Wine,
   panaderia: Croissant,
   promos: DollarSign,
+  cafes: Coffee,  
 }
 
 export function getIcon(key: IconKey): LucideIcon {

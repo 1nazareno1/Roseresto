@@ -33,6 +33,8 @@ export default function HomePage() {
   const handleBackToCategories = () => {
     setSelectedCategory(null)
     window.scrollTo(0, 0)
+    // Limpiar el historial para no tener que ir volviendo uno por uno
+    window.history.pushState({}, "", "/")
   }
 
   // Manejar el botón atrás del navegador
@@ -94,12 +96,12 @@ export default function HomePage() {
         categories={categories}
       />
 
-      <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Container maxWidth="lg" sx={{ py: 2 }}>
         {currentCategory?.groups.map((group) => (
           <section key={group.id}>
             <h3
               style={{
-                margin: "60px 0 16px",
+                margin: "8px 0 16px",
                 fontSize: "1.4rem",
                 fontWeight: 600,
                 color: "#4a4a4a",

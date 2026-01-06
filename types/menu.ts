@@ -1,6 +1,6 @@
 
 
-export type IconKey = "entradas" | "principales" | "pizzas" | "postres" | "bebidas" | "panaderia" | "promos"
+export type IconKey = "entradas" | "principales" | "pizzas" | "postres" | "bebidas" | "panaderia" | "promos" | "cafes"
 
 
 export interface MenuItem {

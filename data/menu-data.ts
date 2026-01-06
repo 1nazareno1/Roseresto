@@ -6,6 +6,7 @@ import { postres } from "./Menu/Postres"
 import { bebidas } from "./Menu/Bebidas"
 import { panaderia } from "./Menu/Panaderia"
 import { promos } from "./Menu/Promos"
+import { cafes } from "./Menu/Cafes"
 
 export const menuData: MenuData = {
   entradas,
@@ -14,5 +15,7 @@ export const menuData: MenuData = {
   postres,
   bebidas,
   panaderia,
+  cafes,
   promos,
+
 }
