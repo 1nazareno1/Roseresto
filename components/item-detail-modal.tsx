@@ -1,8 +1,9 @@
 "use client"
 
-import { Dialog, DialogContent, Box, Typography, CardMedia, Chip, IconButton } from "@mui/material"
+import { Dialog, DialogContent, Box, Typography, Chip, IconButton } from "@mui/material"
 import { Flame, Leaf, Wine, ChevronLeft } from "lucide-react"
 import { useEffect } from "react"
+import LazyImage from "./lazy-image"
 import type { MenuItem } from "@/types/menu"
 
 interface ItemDetailModalProps {
@@ -53,16 +54,7 @@ export default function ItemDetailModal({ open, item, onClose }: ItemDetailModal
           </IconButton>
         </Box>
 
-        <CardMedia
-          component="img"
-          height="280"
-          image={item.image}
-          alt={item.name}
-          sx={{
-            objectFit: "cover",
-            bgcolor: "grey.100",
-          }}
-        />
+        <LazyImage src={item.image} alt={item.name} height={280} />
 
         <Box sx={{ p: 2 }}>
           {/* Nombre y Precio */}

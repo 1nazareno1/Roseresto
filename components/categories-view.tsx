@@ -1,8 +1,9 @@
 "use client"
 
-import { Box, Container, Card, CardContent, CardMedia, Typography, Grid, IconButton } from "@mui/material"
+import { Box, Container, Card, CardContent, Typography, Grid, IconButton, CardMedia } from "@mui/material"
 import { ChevronRight } from "lucide-react"
 import { iconMap } from "@/components/Menu/icon-map"
+import LazyImage from "./lazy-image"
 import type { MenuCategory } from "@/types/menu"
 
 interface CategoriesViewProps {
@@ -49,18 +50,19 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
           },
         }}
       >
-        <img
-          src="/Otros/Rose-inicio.png"
-          alt="Logo"
-          style={{
-            height: "140px",
-            filter: "drop-shadow(0 8px 20px rgba(139, 111, 71, 0.12))",
-            position: "relative",
-            zIndex: 1,
-            WebkitMaskImage: "radial-gradient(circle at center, black 0%, black 70%, transparent 95%)",
-            maskImage: "radial-gradient(circle at center, black 0%, black 70%, transparent 95%)",
-          }}
-        />
+        <Box sx={{ position: "relative", zIndex: 1, maxWidth: 240, width: "100%", height: "auto" }}>
+          <LazyImage
+            src="/Otros/Rose-inicio.png"
+            alt="Logo"
+            height="auto"
+            width="100%"
+            style={{
+              filter: "drop-shadow(0 8px 20px rgba(139, 111, 71, 0.12))",
+              WebkitMaskImage: "radial-gradient(circle at center, black 0%, black 70%, transparent 95%)",
+              maskImage: "radial-gradient(circle at center, black 0%, black 70%, transparent 95%)",
+            }}
+          />
+        </Box>
       </Box>
 
       <Container maxWidth="md">
@@ -154,8 +156,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                   }}
                 >
                   {/* Icon Area */}
-                  <CardMedia
-                    component="div"
+                  <Box
                     sx={{
                       height: 90,
                       background: "linear-gradient(135deg, #faf8f5 0%, #f5f3f0 100%)",
@@ -176,7 +177,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                         <Icon size={40} color="#8B6F47" strokeWidth={1.3} />
                       </Box>
                     )}
-                  </CardMedia>
+                  </Box>
 
                   {/* Content Area */}
                   <CardContent

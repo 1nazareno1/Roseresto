@@ -1,9 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { Grid, Card, CardMedia, CardContent, Typography, Box, Chip } from "@mui/material"
-import { Flame, Leaf,  Wine } from "lucide-react"
+import { Grid, Card, CardContent, Typography, Box, Chip } from "@mui/material"
+import { Flame, Leaf, Wine } from "lucide-react"
 import ItemDetailModal from "./item-detail-modal"
+import LazyImage from "./lazy-image"
 import type { MenuItem } from "@/types/menu"
 
 interface MenuItemsProps {
@@ -56,16 +57,7 @@ export default function MenuItems({ items, categoryLabel }: MenuItemsProps) {
                 },
               }}
             >
-              <CardMedia
-                component="img"
-                height="160"
-                image={item.image}
-                alt={item.name}
-                sx={{
-                  objectFit: "cover",
-                  bgcolor: "grey.100",
-                }}
-              />
+              <LazyImage src={item.image} alt={item.name} height={160} />
               <CardContent sx={{ flexGrow: 1, p: 1.5 }}>
                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "start", mb: 1 }}>
                     <Typography
