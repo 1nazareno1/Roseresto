@@ -14,7 +14,7 @@ export const cafes: MenuCategory = {
           name: "Té frutos rojos",
           description: "Sabor a frutos rojos con notas dulces y afrutadas",
           price: "$3.800",
-          image: "/Cafes/Te-frutos-rojos.webp",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
           tags: [],
         },
         {
@@ -22,7 +22,7 @@ export const cafes: MenuCategory = {
           name: "Té oolong",
           description: "Té de oxidación media, con bajo nivel de teína y efecto relajante. Presenta notas aromáticas florales, con matices de frutos amarillos y dulces. Su licor es ámbar claro y transparente.",
           price: "$3.800",
-          image: "/Cafes/Te-oolong.webp",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-oolong",
           tags: [],
         },
       ],

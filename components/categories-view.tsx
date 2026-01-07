@@ -1,7 +1,6 @@
 "use client"
 
-import { Box, Container, Card, CardContent, Typography, Grid, IconButton, CardMedia } from "@mui/material"
-import { ChevronRight } from "lucide-react"
+import { Box, Container, Card, CardContent, Typography, Grid } from "@mui/material"
 import { iconMap } from "@/components/Menu/icon-map"
 import LazyImage from "./lazy-image"
 import type { MenuCategory } from "@/types/menu"
@@ -23,12 +22,13 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
       <Box
         sx={{
           height: 4,
-          background: "linear-gradient(90deg, rgba(201, 169, 97, 0.4) 0%, rgba(212, 175, 120, 0.4) 50%, rgba(201, 169, 97, 0.4) 100%)",
+          background:
+            "linear-gradient(90deg, rgba(201,169,97,0.4) 0%, rgba(212,175,120,0.4) 50%, rgba(201,169,97,0.4) 100%)",
           mb: 3,
         }}
       />
 
-      {/* Logo Area with Premium Styling */}
+      {/* ÁREA DEL LOGO */}
       <Box
         sx={{
           display: "flex",
@@ -38,28 +38,47 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
           px: 2,
           mb: 4,
           position: "relative",
-          "&::before": {
-            content: '""',
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: "radial-gradient(ellipse at center, rgba(212, 175, 120, 0.05) 0%, transparent 70%)",
-            pointerEvents: "none",
-          },
+          background:
+            "radial-gradient(ellipse at center, rgba(210,140,69,0.22) 0%, rgba(250,248,245,1) 70%)",
         }}
       >
-        <Box sx={{ position: "relative", zIndex: 1, maxWidth: 240, width: "100%", height: "auto" }}>
+        {/* Contenedor del logo */}
+        <Box
+          sx={{
+            position: "relative",
+            zIndex: 1,
+            maxWidth: 240,
+            width: "100%",
+            height: 100,
+            overflow: "hidden",
+            backgroundColor: "#faf8f5",
+          }}
+        >
+          {/* Overlay de difuminado (misma lógica que tu código) */}
+          <Box
+            sx={{
+              position: "absolute",
+              inset: 0,
+              zIndex: 2,
+              pointerEvents: "none",
+              background: `
+                linear-gradient(to top, #faf8f5 0%, transparent 25%),
+                linear-gradient(to bottom, #faf8f5 0%, transparent 25%),
+                linear-gradient(to left, #faf8f5 0%, transparent 20%),
+                linear-gradient(to right, #faf8f5 0%, transparent 20%)
+              `,
+            }}
+          />
+
           <LazyImage
-            src="/Otros/Rose-inicio.png"
+            src="https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/Rose-inicio"
             alt="Logo"
-            height="auto"
-            width="100%"
+            width={240}
+            height={100}
+            objectFit="contain"
             style={{
-              filter: "drop-shadow(0 8px 20px rgba(139, 111, 71, 0.12))",
-              WebkitMaskImage: "radial-gradient(circle at center, black 0%, black 70%, transparent 95%)",
-              maskImage: "radial-gradient(circle at center, black 0%, black 70%, transparent 95%)",
+              position: "relative",
+              zIndex: 1,
             }}
           />
         </Box>
@@ -67,8 +86,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
 
       <Container maxWidth="md">
         {/* Welcome Section */}
-        <Box sx={{ mb: 4, textAlign: "center", position: "relative" }}>
-          {/* Decorative top line */}
+        <Box sx={{ mb: 4, textAlign: "center" }}>
           <Box
             sx={{
               height: 2,
@@ -80,9 +98,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
           />
 
           <Typography
-            variant="h4"
             sx={{
-              textAlign: "center",
               fontWeight: 700,
               color: "#2a2a2a",
               mb: 0.5,
@@ -92,10 +108,9 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
           >
             Menú
           </Typography>
+
           <Typography
-            variant="body1"
             sx={{
-              textAlign: "center",
               color: "#8B6F47",
               fontSize: "0.95rem",
               fontWeight: 500,
@@ -105,7 +120,6 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
             ELIGE UNA CATEGORÍA PARA COMENZAR
           </Typography>
 
-          {/* Decorative bottom line */}
           <Box
             sx={{
               height: 2,
@@ -126,60 +140,34 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                 <Card
                   onClick={() => handleCategoryClick(category.id)}
                   sx={{
-                    height: "160px",
+                    height: 160,
                     display: "flex",
                     flexDirection: "column",
                     cursor: "pointer",
-                    transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-                    border: "2px solid",
-                    borderColor: "#d4af78",
+                    border: "2px solid #d4af78",
                     borderRadius: "8px",
                     bgcolor: "#ffffff",
-                    position: "relative",
-                    overflow: "hidden",
-                    "&::before": {
-                      content: '""',
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      background: "linear-gradient(135deg, rgba(212, 175, 120, 0) 0%, rgba(212, 175, 120, 0.03) 100%)",
-                      pointerEvents: "none",
-                      zIndex: 1,
-                    },
+                    transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
                     "&:hover": {
                       transform: "translateY(-6px)",
-                      boxShadow: "0 12px 32px rgba(139, 111, 71, 0.2), inset 0 1px 0 rgba(212, 175, 120, 0.3)",
+                      boxShadow: "0 12px 32px rgba(139,111,71,0.2)",
                       borderColor: "#c9a961",
                     },
                   }}
                 >
-                  {/* Icon Area */}
                   <Box
                     sx={{
                       height: 90,
-                      background: "linear-gradient(135deg, #faf8f5 0%, #f5f3f0 100%)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      borderBottom: "1px solid",
-                      borderColor: "#e8ddd0",
-                      position: "relative",
+                      background: "linear-gradient(135deg, #faf8f5 0%, #f5f3f0 100%)",
+                      borderBottom: "1px solid #e8ddd0",
                     }}
                   >
-                    {Icon && (
-                      <Box
-                        sx={{
-                          filter: "drop-shadow(0 2px 4px rgba(139, 111, 71, 0.1))",
-                        }}
-                      >
-                        <Icon size={40} color="#8B6F47" strokeWidth={1.3} />
-                      </Box>
-                    )}
+                    {Icon && <Icon size={40} color="#8B6F47" strokeWidth={1.3} />}
                   </Box>
 
-                  {/* Content Area */}
                   <CardContent
                     sx={{
                       flexGrow: 1,
@@ -187,13 +175,9 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
                       alignItems: "center",
                       justifyContent: "center",
                       p: 1,
-                      bgcolor: "#ffffff",
-                      position: "relative",
-                      zIndex: 2,
                     }}
                   >
                     <Typography
-                      variant="body2"
                       sx={{
                         fontWeight: 700,
                         color: "#2a2a2a",
@@ -216,7 +200,8 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
       <Box
         sx={{
           height: 4,
-          background: "linear-gradient(90deg, rgba(201, 169, 97, 0.4) 0%, rgba(212, 175, 120, 0.4) 50%, rgba(201, 169, 97, 0.4) 100%)",
+          background:
+            "linear-gradient(90deg, rgba(201,169,97,0.4) 0%, rgba(212,175,120,0.4) 50%, rgba(201,169,97,0.4) 100%)",
           mt: 6,
         }}
       />

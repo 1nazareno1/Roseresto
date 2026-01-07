@@ -16,7 +16,7 @@ export const principales: MenuCategory = {
       name: "Bife de Chorizo",
       description: "400g de carne premium con papas rústicas y ensalada",
       price: "$3200",
-      image: "/Principales/grilled-beef-steak-premium.jpg",
+      image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Principales/Principales/grilled-beef-steak-premium",
       tags: [],
     },
     {
@@ -24,7 +24,7 @@ export const principales: MenuCategory = {
       name: "Salmón a la Parrilla",
       description: "Filete de salmón con vegetales asados y salsa de limón",
       price: "$2800",
-      image: "/Principales/grilled-salmon-with-vegetables.jpg",
+      image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Principales/Principales/grilled-salmon-with-vegetables",
       tags: [],
     },
     
@@ -45,7 +45,7 @@ export const principales: MenuCategory = {
       name: "Risotto de Hongos",
       description: "Risotto cremoso con hongos portobello y trufa",
       price: "$2200",
-      image: "/Principales/creamy-mushroom-risotto.jpg",
+      image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Principales/Principales/creamy-mushroom-risotto",
       tags: ["Vegetariano"],
       isVegetarian: true,
     },

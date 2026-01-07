@@ -1,0 +1,64 @@
+{
+  "Bebidas": {
+    "craft-beer-ipa.png": "Bebidas/Bebidas/craft-beer-ipa",
+    "fresh-lemonade-mint.jpg": "Bebidas/Bebidas/fresh-lemonade-mint",
+    "red-wine-malbec-glass.jpg": "Bebidas/Bebidas/red-wine-malbec-glass"
+  },
+  "Cafes": {
+    "Te-frutos-rojos.webp": "Cafes/Cafes/Te-frutos-rojos",
+    "Te-oolong.webp": "Cafes/Cafes/Te-oolong"
+  },
+  "Entradas": {
+    "Aceitunas-marinadas.webp": "Entradas/Entradas/Aceitunas-marinadas",
+    "Adicional-de-papas.webp": "Entradas/Entradas/Adicional-de-papas",
+    "beef-carpaccio-elegant-plating.jpg": "Entradas/Entradas/beef-carpaccio-elegant-plating",
+    "bruschetta-caprese-gourmet.jpg": "Entradas/Entradas/bruschetta-caprese-gourmet",
+    "caesar-salad-fresh-lettuce.jpg": "Entradas/Entradas/caesar-salad-fresh-lettuce",
+    "caesar-salad-fresh-restaurant.jpg": "Entradas/Entradas/caesar-salad-fresh-restaurant",
+    "cheese-board-gourmet-platter.jpg": "Entradas/Entradas/cheese-board-gourmet-platter",
+    "Chorizo-seco.webp": "Entradas/Entradas/Chorizo-seco",
+    "Croquetas-de-pollo.webp": "Entradas/Entradas/Croquetas-de-pollo",
+    "fried-calamari-crispy-golden.jpg": "Entradas/Entradas/fried-calamari-crispy-golden",
+    "fried-calamari-golden-crispy.jpg": "Entradas/Entradas/fried-calamari-golden-crispy",
+    "ham-croquettes-golden-crispy.jpg": "Entradas/Entradas/ham-croquettes-golden-crispy",
+    "Mani-tostado.webp": "Entradas/Entradas/Mani-tostado",
+    "Papas-Rusticas.png": "Entradas/Entradas/Papas-Rusticas",
+    "Picada-para-empezar.png": "Entradas/Entradas/Picada-para-empezar",
+    "Porcion-de-papas.webp": "Entradas/Entradas/Porcion-de-papas",
+    "Provoletas.png": "Entradas/Entradas/Provoletas",
+    "Queso-gouda.webp": "Entradas/Entradas/Queso-gouda",
+    "Rabas.webp": "Entradas/Entradas/Rabas",
+    "Ravioles-fritos.webp": "Entradas/Entradas/Ravioles-fritos"
+  },
+  "Otros": {
+    "apple-icon.png": "Otros/Otros/apple-icon",
+    "descripci-n-de-la-imagen.jpg": "Otros/Otros/descripci-n-de-la-imagen",
+    "icon-dark-32x32.png": "Otros/Otros/icon-dark-32x32",
+    "icon-light-32x32.png": "Otros/Otros/icon-light-32x32",
+    "layout-Rose.png": "Otros/Otros/layout-Rose",
+    "placeholder-logo.png": "Otros/Otros/placeholder-logo",
+    "placeholder-user.jpg": "Otros/Otros/placeholder-user",
+    "placeholder.jpg": "Otros/Otros/placeholder",
+    "Rose-inicio.png": "Otros/Otros/Rose-inicio",
+    "Rose-Resto.png": "Otros/Otros/Rose-Resto"
+  },
+  "Panaderia": {
+    "butter-croissant-french.jpg": "Panaderia/Panaderia/butter-croissant-french",
+    "homemade-bread-with-seeds.jpg": "Panaderia/Panaderia/homemade-bread-with-seeds"
+  },
+  "Pizzas": {
+    "four-cheese-pizza-gourmet.jpg": "Pizzas/Pizzas/four-cheese-pizza-gourmet",
+    "margherita-pizza-classic-basil.jpg": "Pizzas/Pizzas/margherita-pizza-classic-basil",
+    "pepperoni-pizza-classic.jpg": "Pizzas/Pizzas/pepperoni-pizza-classic"
+  },
+  "Postres": {
+    "chocolate-brownie-ice-cream.png": "Postres/Postres/chocolate-brownie-ice-cream",
+    "tiramisu-italian-dessert.jpg": "Postres/Postres/tiramisu-italian-dessert"
+  },
+  "Principales": {
+    "creamy-mushroom-risotto.jpg": "Principales/Principales/creamy-mushroom-risotto",
+    "grilled-beef-steak-premium.jpg": "Principales/Principales/grilled-beef-steak-premium",
+    "grilled-salmon-with-vegetables.jpg": "Principales/Principales/grilled-salmon-with-vegetables"
+  },
+  "Promos": {}
+}

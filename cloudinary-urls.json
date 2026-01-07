@@ -1,0 +1,64 @@
+{
+  "Bebidas": {
+    "craft-beer-ipa.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Bebidas/Bebidas/craft-beer-ipa",
+    "fresh-lemonade-mint.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Bebidas/Bebidas/fresh-lemonade-mint",
+    "red-wine-malbec-glass.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Bebidas/Bebidas/red-wine-malbec-glass"
+  },
+  "Cafes": {
+    "Te-frutos-rojos.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+    "Te-oolong.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-oolong"
+  },
+  "Entradas": {
+    "Aceitunas-marinadas.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Aceitunas-marinadas",
+    "Adicional-de-papas.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Adicional-de-papas",
+    "beef-carpaccio-elegant-plating.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/beef-carpaccio-elegant-plating",
+    "bruschetta-caprese-gourmet.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/bruschetta-caprese-gourmet",
+    "caesar-salad-fresh-lettuce.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/caesar-salad-fresh-lettuce",
+    "caesar-salad-fresh-restaurant.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/caesar-salad-fresh-restaurant",
+    "cheese-board-gourmet-platter.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/cheese-board-gourmet-platter",
+    "Chorizo-seco.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Chorizo-seco",
+    "Croquetas-de-pollo.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Croquetas-de-pollo",
+    "fried-calamari-crispy-golden.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/fried-calamari-crispy-golden",
+    "fried-calamari-golden-crispy.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/fried-calamari-golden-crispy",
+    "ham-croquettes-golden-crispy.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/ham-croquettes-golden-crispy",
+    "Mani-tostado.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Mani-tostado",
+    "Papas-Rusticas.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Papas-Rusticas",
+    "Picada-para-empezar.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Picada-para-empezar",
+    "Porcion-de-papas.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Porcion-de-papas",
+    "Provoletas.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Provoletas",
+    "Queso-gouda.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Queso-gouda",
+    "Rabas.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Rabas",
+    "Ravioles-fritos.webp": "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Ravioles-fritos"
+  },
+  "Otros": {
+    "apple-icon.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/apple-icon",
+    "descripci-n-de-la-imagen.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/descripci-n-de-la-imagen",
+    "icon-dark-32x32.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/icon-dark-32x32",
+    "icon-light-32x32.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/icon-light-32x32",
+    "layout-Rose.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/layout-Rose",
+    "placeholder-logo.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/placeholder-logo",
+    "placeholder-user.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/placeholder-user",
+    "placeholder.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/placeholder",
+    "Rose-inicio.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/Rose-inicio",
+    "Rose-Resto.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Otros/Otros/Rose-Resto"
+  },
+  "Panaderia": {
+    "butter-croissant-french.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Panaderia/Panaderia/butter-croissant-french",
+    "homemade-bread-with-seeds.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Panaderia/Panaderia/homemade-bread-with-seeds"
+  },
+  "Pizzas": {
+    "four-cheese-pizza-gourmet.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Pizzas/Pizzas/four-cheese-pizza-gourmet",
+    "margherita-pizza-classic-basil.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Pizzas/Pizzas/margherita-pizza-classic-basil",
+    "pepperoni-pizza-classic.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Pizzas/Pizzas/pepperoni-pizza-classic"
+  },
+  "Postres": {
+    "chocolate-brownie-ice-cream.png": "https://res.cloudinary.com/dbnvfqybv/image/upload/Postres/Postres/chocolate-brownie-ice-cream",
+    "tiramisu-italian-dessert.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Postres/Postres/tiramisu-italian-dessert"
+  },
+  "Principales": {
+    "creamy-mushroom-risotto.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Principales/Principales/creamy-mushroom-risotto",
+    "grilled-beef-steak-premium.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Principales/Principales/grilled-beef-steak-premium",
+    "grilled-salmon-with-vegetables.jpg": "https://res.cloudinary.com/dbnvfqybv/image/upload/Principales/Principales/grilled-salmon-with-vegetables"
+  },
+  "Promos": {}
+}
