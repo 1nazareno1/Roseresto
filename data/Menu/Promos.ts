@@ -14,7 +14,7 @@ export const promos: MenuCategory = {
           name: "Combo Pizza + Bebida",
           description: "Pizza Margherita + Limonada Natural a un precio especial",
           price: "$1900",
-          image: "/pizza-drink-combo.jpg",
+          image: "",
           tags: ["Vegetariano"],
           isVegetarian: true,
         },
