@@ -2,6 +2,7 @@
 
 import { Dialog, DialogContent, Box, Typography, CardMedia, Chip, IconButton } from "@mui/material"
 import { Flame, Leaf, Wine, ChevronLeft } from "lucide-react"
+import { useEffect } from "react"
 import type { MenuItem } from "@/types/menu"
 
 interface ItemDetailModalProps {
@@ -11,6 +12,27 @@ interface ItemDetailModalProps {
 }
 
 export default function ItemDetailModal({ open, item, onClose }: ItemDetailModalProps) {
+  // Manejo del botón atrás del navegador/celular
+  useEffect(() => {
+    if (!open) return
+
+    // Añadir un estado al historial cuando el modal se abre
+    window.history.pushState({ modalOpen: true }, "")
+
+    // Escuchar el evento popstate cuando el usuario presiona atrás
+    const handlePopState = (event: PopStateEvent) => {
+      if (event.state?.modalOpen) {
+        onClose()
+      }
+    }
+
+    window.addEventListener("popstate", handlePopState)
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState)
+    }
+  }, [open, onClose])
+
   if (!item) return null
 
   return (

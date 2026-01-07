@@ -12,22 +12,22 @@ export const metadata: Metadata = {
   title: "RoseResto - Menú Digital",
   description: "Menú digital del restaurante RoseResto",
   generator: "v0.app",
-  icons: {
+      icons: {
     icon: [
       {
-        url: "/layout-Rose.png",
+        url: "/Otros/layout-Rose.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/layout-Rose.png",
+        url: "/Otros/layout-Rose.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/layout-Rose.png",
+        url: "/Otros/layout-Rose.png",
         type: "image/svg+xml",
       },
     ],
-    apple: "/layout-Rose.png",
+    apple: "/Otros/layout-Rose.png",
   },
 }
 

@@ -50,7 +50,7 @@ export default function CategoriesView({ categories, onCategorySelect }: Categor
         }}
       >
         <img
-          src="/Rose inicio.png"
+          src="/Otros/Rose-inicio.png"
           alt="Logo"
           style={{
             height: "140px",

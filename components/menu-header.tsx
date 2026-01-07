@@ -26,7 +26,7 @@ export default function MenuHeader({ onMenuClick, currentCategory, currentIcon }
           <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", minWidth: 80 }}>
             <Box
               component="img"
-              src="/Rose-Resto.png"
+              src="/Otros/Rose-Resto.png"
               alt="Rose Resto"
               sx={{
                 height: 64,
