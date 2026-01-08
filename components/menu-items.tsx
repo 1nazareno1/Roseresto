@@ -57,7 +57,7 @@ export default function MenuItems({ items, categoryLabel }: MenuItemsProps) {
                 },
               }}
             >
-              <LazyImage src={item.image} alt={item.name} height={160} />
+              <LazyImage src={item.image} alt={item.name} height={160} priority={item.priority} />
               <CardContent sx={{ flexGrow: 1, p: 1.5 }}>
                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "start", mb: 1 }}>
                     <Typography

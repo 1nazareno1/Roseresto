@@ -10,6 +10,7 @@ export interface MenuItem {
   price: string
   image: string
   tags: string[]
+  priority?: boolean
   isVegetarian?: boolean
   isSpicy?: boolean
   isAlcoholic?: boolean
