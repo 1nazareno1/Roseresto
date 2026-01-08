@@ -18,6 +18,7 @@ export const entradas: MenuCategory = {
       price: "$17.900",
       image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Rabas",
       tags: ["Clásico"],
+      priority: true,
         },
         {
       id: 2,
@@ -27,6 +28,7 @@ export const entradas: MenuCategory = {
       image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Papas-Rusticas",
       tags: ["vegetariano"],
       isVegetarian: true,
+      priority: true,
         },
         {
       id: 3,
@@ -35,7 +37,8 @@ export const entradas: MenuCategory = {
       price: "$17.000", 
       image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Entradas/Entradas/Provoletas",
       tags: ["vegetariano"],
-      isVegetarian: true,  
+      isVegetarian: true, 
+      priority: true, 
         },
         {
       id: 4,

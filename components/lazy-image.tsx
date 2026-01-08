@@ -11,9 +11,10 @@ interface LazyImageProps {
   style?: React.CSSProperties
   sx?: any
   objectFit?: "cover" | "contain" | "fill" | "scale-down"
+  priority?: boolean
 }
 
-export default function LazyImage({ src, alt, height = 160, width = "100%", style, sx, objectFit = "cover" }: LazyImageProps) {
+export default function LazyImage({ src, alt, height = 160, width = "100%", style, sx, objectFit = "cover", priority = false }: LazyImageProps) {
   // Si es una URL completa de Cloudinary, usarla directamente
   if (src.startsWith("https://res.cloudinary.com")) {
     return (
@@ -21,7 +22,7 @@ export default function LazyImage({ src, alt, height = 160, width = "100%", styl
         <img
           src={src}
           alt={alt}
-          loading="lazy"
+          loading={ priority ? "eager" : "lazy" }
           style={{
             width: "100%",
             height: "100%",
@@ -54,7 +55,8 @@ export default function LazyImage({ src, alt, height = 160, width = "100%", styl
         fill
         sizes="(max-width: 640px) 100vw, 50vw"
         quality="auto"
-        loading="lazy"
+        priority={priority}
+        loading={priority ? "eager" : "lazy"}
         style={{
           objectFit: objectFit,
           ...style,
