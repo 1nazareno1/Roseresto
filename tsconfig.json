@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "data/Menu/BebidasSinAlcohol.ts"  ],
   "exclude": [
     "node_modules"
   ]

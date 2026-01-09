@@ -23,29 +23,30 @@ export default function MenuHeader({ onMenuClick, currentCategory, currentIcon }
     >
       <Container maxWidth="lg">
         <Toolbar sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", minWidth: 80 }}>
+          
+          {/*<Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", minWidth: 20 }}>
             <Box
               component="img"
-              src="/Otros/Rose-Resto.png"
+              src="/Otros/Rose-inicio.png"
               alt="Rose Resto"
               sx={{
-                height: 64,
+                height: 20,
                 width: "auto",
-                maxHeight: 80,
+                maxHeight: 40,
                 objectFit: "contain",
                 display: "block",
               }}
             />
-          </Box>
+          </Box>*/}
 
           <Box sx={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "center", gap: 1 }}>
             {currentIcon}
             <Typography
-              variant="h5"
-              component="h1"
+              variant="h6"
+              component="h2"
               sx={{
                 color: "text.primary",
-                fontWeight: 700,
+                fontWeight: 600,
                 letterSpacing: "-0.5px",
               }}
             >
