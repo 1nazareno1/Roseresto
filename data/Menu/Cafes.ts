@@ -2,11 +2,11 @@ import type { MenuCategory } from "@/types/menu"
 
 export const cafes: MenuCategory = {
   id: "cafes",
-  label: "Cafés",
+  label: "cafés",
   icon: "cafes",
   groups: [
     {
-      id: "cafes",
+      id: "te",
       label: "TE",
       items: [
         {
@@ -25,7 +25,197 @@ export const cafes: MenuCategory = {
           image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-oolong",
           tags: [],
         },
+        {
+          id: 103,
+          name: "Te verde op",
+          description: "Mezcla de té verde con frutas y flores. Sabor a vainilla y ananá.",
+          price: "$3.800",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 104,
+          name: "Té negro",
+          description: "Alto nivel de oxidación. Estimulante, ayuda a la concentración. Nivel de teína: medio a alto. Notas amaderadas y dulces, con astringencia media. Admite leche, endulzantes y cítricos.",
+          price: "$3.800",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+
+
+      
       ],
+    },
+    {
+      id: "cafes",
+      label: "Cafés",
+      items: [
+        {
+          id: 105,
+          name: "EXPRESO",
+          description: "café solo",
+          price: "$2.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 106,
+          name: "CORTADO",
+          description: "café con poca leche",
+          price: "$2.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 107,
+          name: "MACCHIATO",
+          description: "café espumoso",
+          price: "$2.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 108,
+          name: "Café irlandes",
+          description: "",
+          price: "$7.200",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 109,
+          name: "CAFE BAILEYS",
+          description: "",
+          price: "$7.200",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+      ]
+
+    },
+    {
+      id: "CAFE GRANDE",
+      label: "CAFE GRANDE",
+      items: [
+        {
+          id: 110,
+          name: "LATTE FRÍO",
+          description: "CAFÉ, CARAMELO, LECHE Y HIELO",
+          price: "$4.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 111,
+          name: "AMERICANO",
+          description: "cafe suave rebajado con agua",
+          price: "$3.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 112,
+          name: "JARRITO",
+          description: "Café suave tamaño clásico, pedilo solo o cortado",
+          price: "$3.000",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 113,
+          name: "DOBLE",
+          description: "Café intenso tamaño clásico, pedilo solo o cortado",
+          price: "$3.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 114,
+          name: "CAFÉ CON LECHE",
+          description: "mitad café y mitad leche",
+          price: "$4.000",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 115,
+          name: "LATTE",
+          description: "poco café, leche y mucha espuma",
+          price: "$4.000",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 116,
+          name: "LÁGRIMA",
+          description: "poco café y mucha leche",
+          price: "$3.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 117,
+          name: "CAPPUCHINO",
+          description: "cafe con poca leche y mucha espuma",
+          price: "$4.000",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 118,
+          name: "MACCHIATO",
+          description: "cafe espumoso",
+          price: "$3.300",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 119,
+          name: "CAFÉ SABORIZADO caramelo/chocolate",
+          description: "solo café con caramelo o chocolate",
+          price: "$4.800",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 120,
+          name: "Adicional leche de almendras",
+          description: "Agregale leche de almendras al café que más te guste!",
+          price: "$2.400",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 121,
+          name: "TAZON XXL",
+          description: "opcional, café con leche, lágrima",
+          price: "$4.900",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+      ]
+    },
+    {
+      id: "SUBMARINO",
+      label: "SUBMARINO",
+      items: [
+        {
+          id: 122,
+          name: "Chocolatada",
+          description: "Un clasico para los chicos... y grandes tambien!",
+          price: "$4.800",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+        {
+          id: 123,
+          name: "Submarino xxl rose",
+          description: "submarino elaborado con un riquísimo chocolate cobertura semiamargo",
+          price: "$6.800",
+          image: "https://res.cloudinary.com/dbnvfqybv/image/upload/Cafes/Cafes/Te-frutos-rojos",
+          tags: [],
+        },
+      ]
     },
   ],
 }
